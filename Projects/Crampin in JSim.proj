@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <JSim version="2.15">
-  <project name="proj7">
+  <project name="proj3">
     <plotpage name="plotpage_1">
       <control name="desc" value=""/>
       <control name="confPlot" value="0"/>
@@ -77,53 +77,7 @@
       <control name="parSetModified" value="true"/>
       <control name="desc" value=""/>
       <control name="easelVariant" value=""/>
-      <control name="notes">Current uncompilable and inoperable, serving as &quot;storage&quot; for the secondary components of Crampin&apos;s data cut from CBR77 
-Organized as lower-to-upper variables, from constants upwards, aross Crampin 1.1 equations 
-
-
-add prefixable?
-
-mlcyto/mlcell=dimensionless
-same for mlmito, mlsr, mljsr, mlnsr
-
-
-PROBLEM
-how to trigger the event of using alphah1 vs alphah2 gating kinetics
-when (t=t.min) JF:DLKJSFLDK
-
-units of Na+i mmol/(L (cyto))
-
-Equation (S23) altered from Nae to Ke
-y=gamma 
-p=rho
-
-KdKi value of 1.05*10^-8 &quot;a&quot;?
-
-squiggly lines over varialbes are denoted &quot;sq&quot; prefix 
-
-
-denominator of Jnbc: are there supposed to be 2x alpham1nbc, or is 
-one supposed to be alpham2nbc?
-
-units for Jnbc and Jnhe?
-
-PROBLEM 
-[H+]i (Hpi) is undefined by Crampin (assume extern real)
-pH also undefined by Crampin (assume extern real)
-
-GKP is undefined by Crampin (assume extern real)
-components of JK are undefined by Crampin
-Wc undefined by Crampin
-
-unsure how to define SOVFthinSL and its components (min/max are unknown, just manually compute and define as constant?)
-
-
-
-
-
-
-OBJECTIVES
-Break up equations horizontally and vertically, into seperate Na, Ca, and K equations, then a combined INa, Ca, K model </control>
+      <control name="notes"></control>
       <control name="modelSource">//MODEL NUMBER: 001
 //MODEL NAME: Crampin 2015 I
 //DESCRIPTION: Quantitative model of transmembrane current using the first part of Crampin&apos;s 2015 model, replicated in JSim.

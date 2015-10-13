@@ -1,48 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <JSim version="2.15">
-  <project name="proj6">
+  <project name="proj2">
     <model name="BR77">
       <control name="parSetModified" value="true"/>
       <control name="desc" value=""/>
       <control name="easelVariant" value=""/>
-      <control name="notes">
-
-units in Crampin? 
-Questionable on:
-INa (units adjusted to fit; m,h,j supposed to be dimensionless?)
-IKR (units adjusted to fit; Xrss, Rr, Trss supposed to be dimensionless (first two) and 1/mV (Trss)?)
-betapl, upl, umi have had units adjusted (1 mol/m^3)
-JRCO, cOC, JLOC, JROO, JLOO, SCa, PyICz3, PyIOz3, PyOCz1, PyCOz1, PyOOz1, PyCCz1, r1, r2, r3, r4, r5, r7, also adjusted
-ILCC (units adjusted to fit), and Cai (units adjusted to fit)
-recheck all Cai units?
-
-
-SV&apos;s zF/RT
-what is Z? (entered as zCa, placeholder)
-CaSR also missing (Cajsr, or Cansr? placeholder as extern) 
-Cads defined as &quot;extern&quot; b/c its value changes based on whether LCC and RyR channels are open/closed
-
-all z&apos;s of ILCC are initially set = 0 
-is z4 supposed to be dz4/dt?
-
-
-Probabilities P(yxxZy) have parentheses removed b/c &quot;()&quot; are &quot;function of&quot;
-
-variable &quot;betaCai&quot; undefined, after a complicated sub-definition runaround (see S57 in Crampin), b/c a lowest-level part is undefined (stopgap as &quot;extern&quot;)
-because ICa divided between JRyR and ILCC, it seems that gbCa is replaced by thecoefficients of JlOC 
-Voltage appears unable to drop below -50 mV
-IKStim unable to be included for multiple ODE computing errors 
-CVode seems to be only operable method 
-
-m,h,j, as a function of (t) GRAPH CHANGES WHEN &quot;real Cai(t) mM;&quot; is moved between lines of source code (3 different versions) 
-POSSIBLY DUE TO &quot;if, then&quot; of m,h,j?
-
-IStim not firing after set timetorepeat interval? altering ineffective Pulse1 or fgen problem? 
-
-***TO SOLVE THE ERROR LOOP OF &quot;source var X has free domain (t) missing in solved var&quot; ad &quot;Incompatible definitions for top,&quot; 
-JUST DEINFE VARIABLE &quot;real X(t);&quot; and then a line under that, &quot;X = Y;&quot; (SEMICOLONS ARE THE KEY; NOT COMMAS)
-
-BREAK DOWN PIECE BY PIECE AND COMPARE TO BR77 EQUIVALENTS, USING GRAPHS, </control>
+      <control name="notes"></control>
       <control name="modelSource">//MODEL NUMBER: 002
 //MODEL NAME: Crampin 2015 II
 //DESCRIPTION: Quantitative model of transmembrane current based on Hodgkin-Huxley (1952) and Beeler-Reuter (1977), 
